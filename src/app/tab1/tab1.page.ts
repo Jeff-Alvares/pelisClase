@@ -8,8 +8,12 @@ import { MoviesService } from '../services/movies.service';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit {
-
-  peliculasRecientes: Pelicula[]=[];
+  peliculasRecientes: Pelicula[] = [];
+  slideOpts = {
+  slidesPerView: 1.1,
+  freeMode: true
+  };
+  
 
   constructor(private moviesService: MoviesService) {}
 
